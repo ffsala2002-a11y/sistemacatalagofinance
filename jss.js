@@ -714,7 +714,7 @@ function renderLogin() {
 function renderHome() {
     return `
     <div class="container">
-    <h2 class="title-home">Catálago AUG</h2>
+    <h2 class="title-home">Sistema Catálogo Finance AUG</h2>
     <div class="config-home">
     <div id="totalCatalogo"></div>
     <button onclick="setPage('carrinho')" class="btn-carrinho" style="position:relative;">
