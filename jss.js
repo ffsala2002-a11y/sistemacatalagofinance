@@ -717,7 +717,7 @@ function renderHome() {
     <h2 class="title-home">Catálago AUG</h2>
     <div class="config-home">
     <div id="totalCatalogo"></div>
-    <button onclick="setPage('carrinho')" class="btn-carrinho">
+    <button onclick="setPage('carrinho')" class="btn-carrinho" style="position:relative;">
     🛒 Ver Carrinho
     <span id="contadorCarrinho" style="
     position:absolute;
