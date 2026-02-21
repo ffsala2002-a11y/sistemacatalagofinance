@@ -1,0 +1,208 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #f5f5f5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  gap: 10px;
+  background: white;
+}
+
+button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.admin-btn {
+  background: black;
+  color: white;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+}
+
+.image-box {
+  height: 180px;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.import-info {
+  background: #e8ffe8;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.small {
+  font-size: 14px;
+  color: #555;
+}
+
+.image-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.remove {
+  color: red;
+  cursor: pointer;
+}
+
+
+#box-catalago {
+  width: 100vw;
+  height: 100vh;
+}
+
+#catalogGrid {
+  width: 100%;
+  height: 84%;
+  overflow: auto;
+  padding: 0.5rem;
+  border: solid 2px;
+  border-radius: 10px;
+  background-color: rgba(122, 122, 122, 0.86);
+}
+
+#box-admin {
+  width: 100vw;
+  height: auto;
+}
+
+#adminGrid {
+  width: 100%;
+  height: 80%;
+  overflow: auto;
+  padding: 0.5rem;
+  border: solid 2px;
+  border-radius: 10px;
+  background-color: rgba(122, 122, 122, 0.86);
+}
+
+
+
+
+
+/*//////////////////
+RESPONSIVE MOBILE
+///////////////////*/
+@media  (min-width: 370px) and (max-width: 500px) {
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .config-home {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .btn-carrinho {
+    width: 150px;
+    position: relative;
+  }
+  
+  .box-input-home {
+    /*border: solid 1px;*/
+  }
+  
+  .input-home {
+    width: 98%;
+    height: 40px;
+    border-radius: 20px;
+    border: solid 1px;
+    padding: 0 0.5rem;
+  }
+  
+  .container {
+    width: 100%;
+    padding: 1rem;
+    position: relative;
+    top: -2.2rem;
+    /*border: solid 2px green;*/
+  }
+  
+  #box-catalago {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -2rem;
+    /*border: solid 2px red;*/
+  }
+  
+  #catalogGrid {
+    width: 100%;
+    height: 450px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /*border: solid 2px pink;*/
+  }
+  
+  .card {
+    width: 100%;
+    position: relative;
+    left: 0;
+  }
+  
+}
